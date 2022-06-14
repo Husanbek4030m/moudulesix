@@ -23,6 +23,7 @@
 		8D332B96284F6C860054F5C8 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B95284F6C860054F5C8 /* Profile.swift */; };
 		8D332B99284F74260054F5C8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B97284F74260054F5C8 /* ProfileTableViewCell.swift */; };
 		8D332B9A284F74260054F5C8 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D332B98284F74260054F5C8 /* ProfileTableViewCell.xib */; };
+		8DB4848B2858ACD0004685D4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4848A2858ACD0004685D4 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		8D332B95284F6C860054F5C8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		8D332B97284F74260054F5C8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		8D332B98284F74260054F5C8 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		8DB4848A2858ACD0004685D4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				8D332B8C284F62950054F5C8 /* SignUpViewController.xib */,
 				8D332B8F284F675C0054F5C8 /* ListViewController.swift */,
 				8D332B90284F675C0054F5C8 /* ListViewController.xib */,
+				8DB4848A2858ACD0004685D4 /* BaseViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				8D332B89284F5CBB0054F5C8 /* HomeViewController.swift in Sources */,
 				8D332B99284F74260054F5C8 /* ProfileTableViewCell.swift in Sources */,
 				8D332B73284F5C660054F5C8 /* ViewController.swift in Sources */,
+				8DB4848B2858ACD0004685D4 /* BaseViewController.swift in Sources */,
 				8D332B6F284F5C660054F5C8 /* AppDelegate.swift in Sources */,
 				8D332B79284F5C660054F5C8 /* moudulesix.xcdatamodeld in Sources */,
 				8D332B71284F5C660054F5C8 /* SceneDelegate.swift in Sources */,

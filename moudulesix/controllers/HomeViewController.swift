@@ -7,13 +7,13 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         addNavBar()
-        view.backgroundColor = UIColor.darkGray
+        view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
 
@@ -24,14 +24,12 @@ class HomeViewController: UIViewController {
         title = "Login"
     }
     @IBAction func showList(_ sender: Any) {
-        let vc = ListViewController(nibName: "ListViewController", bundle: nil)
-        
-        self.navigationController?.pushViewController(vc, animated: true)
+        sceneDelegete().callHomeController()
     }
     
     @IBAction func showSingUp(_ sender: Any) {
         let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true, completion: nil)
     }
     
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,15 @@ class SignUpViewController: UIViewController {
     func initView() {
         addNavBar()
         title = "Sign Up"
-        view.backgroundColor = UIColor.darkGray
+        view.backgroundColor = UIColor.white
+    }
+    @IBAction func toSignIn(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
+    @IBAction func toSignUp(_ sender: Any) {        
+            self.dismiss(animated: true)
+    }
     func addNavBar() {
         let back = UIImage(named: "ic_back")
         

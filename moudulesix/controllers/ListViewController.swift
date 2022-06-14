@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
    
     var items:Array<Profile> = Array()
 
@@ -44,8 +44,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @objc func backTapped() {
-        print("back")
-        navigationController?.popViewController(animated: true)
+        sceneDelegete().callLoginController()
     }
     
 
