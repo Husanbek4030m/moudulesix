@@ -14,6 +14,15 @@
 		8D332B79284F5C660054F5C8 /* moudulesix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B77284F5C660054F5C8 /* moudulesix.xcdatamodeld */; };
 		8D332B7B284F5C680054F5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D332B7A284F5C680054F5C8 /* Assets.xcassets */; };
 		8D332B7E284F5C680054F5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D332B7C284F5C680054F5C8 /* LaunchScreen.storyboard */; };
+		8D332B89284F5CBB0054F5C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B87284F5CBB0054F5C8 /* HomeViewController.swift */; };
+		8D332B8A284F5CBB0054F5C8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D332B88284F5CBB0054F5C8 /* HomeViewController.xib */; };
+		8D332B8D284F62950054F5C8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B8B284F62950054F5C8 /* SignUpViewController.swift */; };
+		8D332B8E284F62950054F5C8 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D332B8C284F62950054F5C8 /* SignUpViewController.xib */; };
+		8D332B91284F675C0054F5C8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B8F284F675C0054F5C8 /* ListViewController.swift */; };
+		8D332B92284F675C0054F5C8 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D332B90284F675C0054F5C8 /* ListViewController.xib */; };
+		8D332B96284F6C860054F5C8 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B95284F6C860054F5C8 /* Profile.swift */; };
+		8D332B99284F74260054F5C8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D332B97284F74260054F5C8 /* ProfileTableViewCell.swift */; };
+		8D332B9A284F74260054F5C8 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D332B98284F74260054F5C8 /* ProfileTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		8D332B7A284F5C680054F5C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D332B7D284F5C680054F5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D332B7F284F5C680054F5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D332B87284F5CBB0054F5C8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8D332B88284F5CBB0054F5C8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8D332B8B284F62950054F5C8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8D332B8C284F62950054F5C8 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		8D332B8F284F675C0054F5C8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		8D332B90284F675C0054F5C8 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		8D332B95284F6C860054F5C8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		8D332B97284F74260054F5C8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		8D332B98284F74260054F5C8 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +76,57 @@
 		8D332B6D284F5C660054F5C8 /* moudulesix */ = {
 			isa = PBXGroup;
 			children = (
+				8D332B94284F69660054F5C8 /* models */,
+				8D332B93284F695B0054F5C8 /* celles */,
+				8D332B86284F5C750054F5C8 /* controllers */,
+				8D332B85284F5C6D0054F5C8 /* apputils */,
 				8D332B6E284F5C660054F5C8 /* AppDelegate.swift */,
 				8D332B70284F5C660054F5C8 /* SceneDelegate.swift */,
-				8D332B72284F5C660054F5C8 /* ViewController.swift */,
-				8D332B74284F5C660054F5C8 /* Main.storyboard */,
-				8D332B7A284F5C680054F5C8 /* Assets.xcassets */,
-				8D332B7C284F5C680054F5C8 /* LaunchScreen.storyboard */,
 				8D332B7F284F5C680054F5C8 /* Info.plist */,
 				8D332B77284F5C660054F5C8 /* moudulesix.xcdatamodeld */,
 			);
 			path = moudulesix;
+			sourceTree = "<group>";
+		};
+		8D332B85284F5C6D0054F5C8 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				8D332B72284F5C660054F5C8 /* ViewController.swift */,
+				8D332B74284F5C660054F5C8 /* Main.storyboard */,
+				8D332B7A284F5C680054F5C8 /* Assets.xcassets */,
+				8D332B7C284F5C680054F5C8 /* LaunchScreen.storyboard */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		8D332B86284F5C750054F5C8 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D332B87284F5CBB0054F5C8 /* HomeViewController.swift */,
+				8D332B88284F5CBB0054F5C8 /* HomeViewController.xib */,
+				8D332B8B284F62950054F5C8 /* SignUpViewController.swift */,
+				8D332B8C284F62950054F5C8 /* SignUpViewController.xib */,
+				8D332B8F284F675C0054F5C8 /* ListViewController.swift */,
+				8D332B90284F675C0054F5C8 /* ListViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		8D332B93284F695B0054F5C8 /* celles */ = {
+			isa = PBXGroup;
+			children = (
+				8D332B97284F74260054F5C8 /* ProfileTableViewCell.swift */,
+				8D332B98284F74260054F5C8 /* ProfileTableViewCell.xib */,
+			);
+			path = celles;
+			sourceTree = "<group>";
+		};
+		8D332B94284F69660054F5C8 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8D332B95284F6C860054F5C8 /* Profile.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +187,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D332B8E284F62950054F5C8 /* SignUpViewController.xib in Resources */,
 				8D332B7E284F5C680054F5C8 /* LaunchScreen.storyboard in Resources */,
+				8D332B92284F675C0054F5C8 /* ListViewController.xib in Resources */,
+				8D332B9A284F74260054F5C8 /* ProfileTableViewCell.xib in Resources */,
 				8D332B7B284F5C680054F5C8 /* Assets.xcassets in Resources */,
 				8D332B76284F5C660054F5C8 /* Main.storyboard in Resources */,
+				8D332B8A284F5CBB0054F5C8 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D332B8D284F62950054F5C8 /* SignUpViewController.swift in Sources */,
+				8D332B96284F6C860054F5C8 /* Profile.swift in Sources */,
+				8D332B89284F5CBB0054F5C8 /* HomeViewController.swift in Sources */,
+				8D332B99284F74260054F5C8 /* ProfileTableViewCell.swift in Sources */,
 				8D332B73284F5C660054F5C8 /* ViewController.swift in Sources */,
 				8D332B6F284F5C660054F5C8 /* AppDelegate.swift in Sources */,
 				8D332B79284F5C660054F5C8 /* moudulesix.xcdatamodeld in Sources */,
 				8D332B71284F5C660054F5C8 /* SceneDelegate.swift in Sources */,
+				8D332B91284F675C0054F5C8 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
