@@ -26,21 +26,24 @@ class ListViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         tView.delegate = self
         
         addNavBar()
-        title = "Table View"
+        title = "Instagram"
         
-        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "user1", description: "Lorem ipsum ewfe ewfew fewf ew fwefwefwefewfw", contentImg: "wallpaper"))
-        items.append(Profile(fullName: "Bahora", subTitle: "5 soniya avval", avatar: "user2", description: "Lorem ipsum", contentImg: "wallpaper"))
-        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "user1", description: "Lorem ipsum", contentImg: "wallpaper"))
-        items.append(Profile(fullName: "Bahora", subTitle: "5 soniya avval", avatar: "user2", description: "Lorem ipsum", contentImg: "wallpaper"))
-        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "user1", description: "Lorem ipsum", contentImg: "wallpaper"))
-        items.append(Profile(fullName: "Bahora", subTitle: "5 soniya avval", avatar: "user2", description: "Lorem ipsum", contentImg: "wallpaper"))
-        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "user1", description: "Lorem ipsum", contentImg: "wallpaper"))
+        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "person_m", description: "Lorem ipsum ewfe ewfew fewf ew fwefwefwefewfw", contentImg: "w1"))
+        items.append(Profile(fullName: "Bahora", subTitle: "5 soniya avval", avatar: "person_w", description: "Lorem ipsum", contentImg: "w2"))
+        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "person_m", description: "Lorem ipsum", contentImg: "w1"))
+        items.append(Profile(fullName: "Bahora", subTitle: "5 soniya avval", avatar: "person_w", description: "Lorem ipsum", contentImg: "w2"))
+        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "person_m", description: "Lorem ipsum", contentImg: "w1"))
+        items.append(Profile(fullName: "Bahora", subTitle: "5 soniya avval", avatar: "person_w", description: "Lorem ipsum", contentImg: "w2"))
+        items.append(Profile(fullName: "Husan", subTitle: "5 soniya avval", avatar: "person_m", description: "Lorem ipsum", contentImg: "w1"))
     }
     
     func addNavBar() {
-        let back = UIImage(named: "ic_back")
+        let back = UIImage(named: "ic_camera")
+        let near = UIImage(named: "ic_near")
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: back, style: .plain, target: self, action: #selector(backTapped))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: near, style: .plain, target: self, action: nil)
     }
     
     @objc func backTapped() {
@@ -66,6 +69,11 @@ class ListViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 600
+    }
+    
     
 
 }
